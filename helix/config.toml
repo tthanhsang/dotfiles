@@ -1,0 +1,24 @@
+theme = "catppuccin_macchiato"
+
+[keys]
+
+# At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
+[keys.normal]
+C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+
+[keys.insert]
+"A-x" = "normal_mode" # Maps Alt-x to enter normal mode
+
+# Alt
+"A-h" = "move_char_left"
+"A-j" = "move_visual_line_down"
+"A-l" = "move_char_right"
+"A-k" = "move_visual_line_up"
+"A-right" = "move_next_word_start"
+"A-left" = "move_prev_word_end"
+# Ctr
+C-w = ["move_prev_word_start","move_next_word_start"]

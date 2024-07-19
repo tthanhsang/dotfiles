@@ -1,0 +1,25 @@
+import = [
+  # uncomment the flavour you want below:
+  #"~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+   "~/.config/alacritty/catppuccin-macchiato.toml"
+  # "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+#[shell]
+#program = "/bin/zsh"
+#args = ["-l", "-c", "zellij"]
+[window]
+  decorations  = "None"
+  startup_mode  = "Maximized"
+  option_as_alt = "OnlyLeft"
+[font]
+size = 20
+[font.normal]
+family = "Hack Nerd Font Mono"
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]

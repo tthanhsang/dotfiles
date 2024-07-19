@@ -1,0 +1,14 @@
+# {dotfiles}/bombadil.toml
+
+# Path to your dotfiles relative to your $HOME directory
+dotfiles_dir = "dotfiles"
+
+# macos profile hook : running `bombadil link -p macos` will exectute `cp ~/dotfiles/zsh/p10k.zsh ~/.p10k.zsh`
+#[profiles.macos]
+#prehooks = [
+#    "cp ~/dotfiles/zsh/p10k.zsh ~/.p10k.zsh"
+#       ]
+[profiles.linux.dots]
+zsh = { source = "zsh/zshrc", target = ".zshrc" }
+alacritty = { source = "alacritty", target = ".config/alacritty" }
+helix = { source = "helix", target = ".config/helix" }
